@@ -1,0 +1,198 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    padding: 100px;
+}
+
+#manhead {
+    animation: manhead 1s ease-in-out infinite alternate;
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+
+@keyframes manhead {
+    from {
+        transform: rotateZ(0deg);
+    }
+    to {
+        transform: rotateZ(-20deg);
+    }
+}
+
+#girlhead {
+    animation: girlhead 1s ease-in-out infinite alternate;
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+
+@keyframes girlhead {
+    from {
+        transform: rotateZ(0deg);
+    }
+    to {
+        transform: rotateZ(30deg);
+    }
+}
+
+#barone {
+    animation: bars 1s ease infinite alternate 1s;
+    transform-origin: right;
+}
+
+#bartwo {
+    animation: bars 1s ease infinite alternate 0.5s;
+    transform-origin: right;
+}
+
+#barthree {
+    animation: bars 1s ease infinite alternate 0.10s;
+    transform-origin: right;
+}
+
+#two {
+    animation: bars 1s ease infinite alternate 0.5s;
+    transform-origin: left;
+}
+
+#three {
+    animation: bars 1s ease infinite alternate 0.5s;
+    transform-origin: left;
+}
+
+#four {
+    animation: bars 1s ease infinite alternate 0.5s;
+    transform-origin: left;
+}
+
+@keyframes bars {
+    from {
+        transform:scaleX(0)
+    }
+    to {
+        transform:scaleX(1)
+    }
+}
+
+#bigleaf {
+    animation: leaf 2s ease-in-out infinite alternate;
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+
+#smallleaf {
+    animation: leaf 3s ease-in-out infinite alternate;
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+
+#smallleaf2 {
+    animation: leaf 3s ease-in-out infinite alternate;
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+
+@keyframes leaf {
+    from {
+        transform: rotateZ(0deg);
+    }
+    to {
+        transform: rotateZ(-20deg);
+    }
+}
+
+#red {
+    animation: opacityPulse 2s ease-out;
+    animation-iteration-count: infinite;
+    opacity: 1;
+}
+
+#orange {
+    animation: opacityPulse 2s ease-out;
+    animation-iteration-count: infinite;
+    opacity: 1;
+}
+
+#green {
+    animation: opacityPulse 2s ease-out;
+    animation-iteration-count: infinite;
+    opacity: 1;
+}
+
+@-webkit-keyframes opacityPulse {
+    0% {
+        opacity: 0.0;
+    }
+    50% {
+        opacity: 1.0;
+    }
+    100% {
+        opacity: 0.0;
+    }
+}
+
+#seekbar {
+    animation: seekbar 3s ease infinite alternate 1s;
+    transform-origin: left;
+}
+
+@keyframes seekbar {
+    from {
+        transform:scaleX(0.40)
+    }
+    to {
+        transform:scaleX(1)
+    }
+}
+
+#ball {
+    animation: ball 3s ease infinite alternate 1s;
+    transform-origin: left;
+}
+
+@keyframes ball {
+    from {
+        transform:scaleX(0.40)
+    }
+    to {
+        transform:scaleX(1)
+    }
+}
+
+#thumbnail1 {
+    animation: thumbnail 1s ease infinite alternate 1s;
+    transform-origin: bottom;
+}
+
+#thumbnail2 {
+    animation: thumbnail 1s ease infinite alternate 1s;
+    transform-origin: bottom;
+}
+
+@keyframes thumbnail {
+    from {
+        transform:scaleY(0.90)
+    }
+    to {
+        transform:scaleY(1)
+    }
+}
+
+#girlhand {
+    animation: girlhand 4s ease-in-out infinite alternate;
+    transform-origin: top;
+    transform-box: fill-box;
+}
+
+@keyframes girlhand {
+    0%, 100% {
+        transform: rotate(10deg);
+    }
+    50% {
+        transform: rotate(-10deg);
+    }
+}
